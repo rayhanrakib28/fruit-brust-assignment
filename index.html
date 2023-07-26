@@ -34,7 +34,111 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="poppins">
+
+  <header class="container mx-auto">
+    <!-- navbar section -->
+    <section class="navbar-container mt-5">
+      <div class="navbar bg-none lg:bg-primary md:bg-primary p-5 rounded-3xl justify-between">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal text-light-500 hover:text-white font-medium px-1">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center flex-row items-center">
+          <img src="./images/logo.png" alt="" class="mr-2">
+          <a class="text-primary md:text-light-500 lg:text-light-500 capitalize font-semibold text-2xl">Fruit Brust</a>
+        </div>
+        <div class="navbar-end">
+          <div class="hidden md:flex lg:flex">
+            <form>
+              <div class="relative ">
+                <input type="search" class="py-3 text-sm text-light-100 bg-light-500 rounded-md pl-5 focus:outline-none focus:bg-light-500 focus:text-dark-500" placeholder="Search Here..." autocomplete="off">
+                <span class="absolute inset-y-0 right-0 flex items-center pr-2">
+                  <button type="submit" class="p-1 focus:outline-none">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-6 h-6"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                  </button>
+                </span>
+              </div>
+            </form>
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="md:hidden lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="black"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <label tabindex="0" class="md:flex lg:hidden sm:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary text-light-500 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- banner section -->
+    <section class="banner-container mt-10">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner1.png" class="w-full" />
+          <div class="absolute inset-0 bg-dark-500 bg-opacity-70"></div>
+            <div class="absolute inset-x-[15%]  text-center md:block">
+              <h3 class="text-xl md:text-2xl lg:text-5xl text-light-500 ">Exotic tastes at your doorstep</h3>
+              <p class="text-sm md:text-lg lg:text-xl text-light-100 pt-2 md:pt-3 lg:pt-4">We supply highly quality organic products</p>
+            </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a> 
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner2.png" class="w-full" />
+          <div class="absolute inset-0 bg-dark-500 bg-opacity-70"></div>
+            <div class="absolute inset-x-[15%]  text-center md:block">
+              <h3 class="text-xl md:text-2xl lg:text-5xl text-light-500 ">Exotic tastes at your doorstep</h3>
+              <p class="text-sm md:text-lg lg:text-xl text-light-100 pt-2 md:pt-3 lg:pt-4">We supply highly quality organic products</p>
+            </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a> 
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner3.png" class="w-full" />
+          <div class="absolute inset-0 bg-dark-500 bg-opacity-70"></div>
+            <div class="absolute inset-x-[15%] text-center md:block">
+              <h3 class="text-xl md:text-2xl lg:text-5xl text-light-500 ">Exotic tastes at your doorstep</h3>
+              <p class="text-sm md:text-lg lg:text-xl text-light-100 pt-2 md:pt-3 lg:pt-4">We supply highly quality organic products</p>
+            </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner4.png" class="w-full" />
+          <div class="absolute inset-0 bg-dark-500 bg-opacity-70"></div>
+            <div class="absolute inset-x-[10%]  text-center md:block">
+              <h3 class="text-xl md:text-2xl lg:text-5xl text-light-500 ">Exotic tastes at your doorstep</h3>
+              <p class="text-sm md:text-lg lg:text-xl text-light-100 pt-2 md:pt-3 lg:pt-4">We supply highly quality organic products</p>
+            </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </header>  
+
+
 </body>
 </html>
