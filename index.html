@@ -167,45 +167,204 @@
 
   <main class="container mx-auto mt-20 lg:mt-72">
     <!-- deal of the section -->
-    <div class="hot-deals-container mt-10 lg:mt-20">
-      <div class="headings lg:flex   justify-between items-center gap-10">
-        <div class="title lg:flex-1">
-          <h2 class="font-bold text-dark-500 text-center lg:text-start text-5xl">Deal of the day</h2>
-          <p class="font-normal text-dark-100 text-base text-center lg:text-start w-80 lg:w-auto pt-10 mx-auto lg:pr-48">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-        </div>
-        <div class="countdown-container pt-20 lg:pt-0">
-          <div class="grid grid-flow-col gap-5 text-center justify-center auto-cols-max">
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:15;"></span>
-              </span>
-              days
-            </div> 
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:10;"></span>
-              </span>
-              hours
-            </div> 
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:24;"></span>
-              </span>
-              min
-            </div> 
-            <div class="flex flex-col">
-              <span class="countdown font-mono text-5xl">
-                <span style="--value:11;"></span>
-              </span>
-              sec
+    <section class="flex flex-col items-center mt-10 lg:mt-20">
+      <div class="hot-deals-container">
+        <div class="headings lg:flex   justify-between items-center gap-10">
+          <div class="title lg:flex-1">
+            <h2 class="font-bold text-dark-500 text-center lg:text-start text-5xl">Deal of the day</h2>
+            <p class="font-normal text-dark-100 text-base text-center lg:text-start w-5/6 lg:w-auto pt-10 mx-auto lg:pr-48">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="countdown-container py-10 lg:py-0 lg:pt-0">
+            <div class="grid grid-flow-col gap-5 text-center justify-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:11;"></span>
+                </span>
+                sec
+              </div>
             </div>
           </div>
         </div>
+        <div class="fruits-card md:grid lg:grid flex flex-col items-center justify-center md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 lg:mt-20">
+          <div class="fruit-1 w-fit text-center inline-flex flex-col items-center justify-center border px-12 py-8">
+            <img src="./images/fruit6.png" class="w-fit" alt="">
+            <h3 class="text-xl py-5 font-medium text-dark-500">12.90$ - 18.85$</h3>
+            <hr class="w-40">
+            <p class="text-lg font-normal text-dark-100 py-5">Apple</p>
+            <div class="review-star flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-primary mt-6" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box inline-flex flex-col items-center justify-center border p-12">
+                <img src="./images/fruit6.png" alt="">
+                <h3 class="font-bold text-2xl mt-5">Apples</h3>
+                <p class="py-4 font-normal text-sm w-80">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="review-star flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                  </svg>
+                </div>
+                <div class="modal-action flex justify-center items-center">
+                  <button class="border-2 text-primary mr-10 px-8 py-5  rounded-2xl">Close</button>
+                  <button class="bg-primary text-light-500 px-8 py-5 rounded-2xl">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="fruit-2 w-fit text-center inline-flex flex-col items-center justify-center border px-12 py-8">
+            <img src="./images/fruit7.png" class="w-fit" alt="">
+            <h3 class="text-xl py-5 font-medium text-dark-500">12.90$ - 18.85$</h3>
+            <hr class="w-40">
+            <p class="text-lg font-normal text-dark-100 py-5">Orange</p>
+            <div class="review-star flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-primary mt-6" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box inline-flex flex-col items-center justify-center border p-12">
+                <img src="./images/fruit7.png" alt="">
+                <h3 class="font-bold text-2xl mt-5">Orange</h3>
+                <p class="py-4 font-normal text-sm w-80">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="review-star flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                  </svg>
+                </div>
+                <div class="modal-action flex justify-center items-center">
+                  <button class="border-2 text-primary mr-10 px-8 py-5  rounded-2xl">Close</button>
+                  <button class="bg-primary text-light-500 px-8 py-5 rounded-2xl">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="fruit-3 w-fit text-center inline-flex flex-col items-center justify-center border px-12 py-8">
+            <img src="./images/fruit8.png" class="w-fit" alt="">
+            <h3 class="text-xl py-5 font-medium text-dark-500">12.90$ - 18.85$</h3>
+            <hr class="w-40">
+            <p class="text-lg font-normal text-dark-100 py-5">Red Dragon</p>
+            <div class="review-star flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-primary mt-6" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box inline-flex flex-col items-center justify-center border p-12">
+                <img src="./images/fruit8.png" alt="">
+                <h3 class="font-bold text-2xl mt-5">Red Dragon</h3>
+                <p class="py-4 font-normal text-sm w-80">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="review-star flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                  </svg>
+                </div>
+                <div class="modal-action flex justify-center items-center">
+                  <button class="border-2 text-primary mr-10 px-8 py-5  rounded-2xl">Close</button>
+                  <button class="bg-primary text-light-500 px-8 py-5 rounded-2xl">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+          <div class="fruit-4 w-fit text-center inline-flex flex-col items-center justify-center border px-12 py-8">
+            <img src="./images/fruit9.png" class="w-fit" alt="">
+            <h3 class="text-xl py-5 font-medium text-dark-500">12.90$ - 18.85$</h3>
+            <hr class="w-40">
+            <p class="text-lg font-normal text-dark-100 py-5">Banana</p>
+            <div class="review-star flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn text-primary mt-6" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box inline-flex flex-col items-center justify-center border p-12">
+                <img src="./images/fruit9.png" alt="">
+                <h3 class="font-bold text-2xl mt-5">Banana</h3>
+                <p class="py-4 font-normal text-sm w-80">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                <div class="review-star flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                    <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                    <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                    <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                    <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                    <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                    <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                  </svg>
+                </div>
+                <div class="modal-action flex justify-center items-center">
+                  <button class="border-2 text-primary mr-10 px-8 py-5  rounded-2xl">Close</button>
+                  <button class="bg-primary text-light-500 px-8 py-5 rounded-2xl">Buy Now</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
       </div>
-      <div class="fruits-card mt-10 lg:mt-20">
-
-      </div>
-    </div>
+      <button class="bg-primary text-light-500 w-40 mt-5 md:mt-8 lg:mt-12 text-center px-2 py-2 lg:px-8 lg:py-5 text-sm md:text-lg lg:text-lg rounded-xl">Shop All</button>
+    </section>
+    
 
 
 
